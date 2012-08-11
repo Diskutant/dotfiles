@@ -1,13 +1,14 @@
-# Mathias’s dotfiles
+# Diskutant's dotfiles forked from Mathias’s dotfiles
 
 ## Installation
 
 ### Using Git and the bootstrap script
 
-You can clone the repository wherever you want. (I like to keep it in `~/Projects/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
+You can clone the repository wherever you want. (I like to keep it in `~/Documents/Projects/dotfiles`) The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 ```bash
-git clone https://github.com/mathiasbynens/dotfiles.git && cd dotfiles && ./bootstrap.sh
+original source: git clone https://github.com/mathiasbynens/dotfiles.git && cd dotfiles && ./bootstrap.sh
+my source: git clone https://github.com/diskutant/dotfiles.git && cd dotfiles && ./bootstrap.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
@@ -54,7 +55,7 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 ### Sensible OS X defaults
 
-When setting up a new Mac, you may want to set some sensible OS X defaults:
+When setting up a new Mac, this will do some configurations I like:
 
 ```bash
 ./.osx
@@ -63,10 +64,10 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 ## Feedback
 
 Suggestions/improvements
-[welcome](https://github.com/mathiasbynens/dotfiles/issues)!
+[welcome](https://github.com/diskutant/dotfiles/issues)!
 
 ## Thanks to…
-
+* [Mathias Bynens] (http://mths.be/) from whom I forked this, he adds thanks to the following persons:
 * [Gianni Chiappetta](http://gf3.ca/) for sharing his [amazing collection of dotfiles](https://github.com/gf3/dotfiles)
 * [Matijs Brinkhuis](http://hotfusion.nl/) and his [homedir repository](https://github.com/matijs/homedir)
 * [Jan Moesen](http://jan.moesen.nu/) and his [ancient `.bash_profile`](https://gist.github.com/1156154) + [shiny tilde repository](https://github.com/janmoesen/tilde)
