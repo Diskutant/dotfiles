@@ -2,7 +2,7 @@
 #defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
 # Always show scrollbars
-defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+#defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -20,13 +20,13 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 #defaults write NSGlobalDomain NSTextShowsControlCharacters -bool true
 
 # Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
-defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+#defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Enable subpixel font rendering on non-Apple LCDs
-defaults write NSGlobalDomain AppleFontSmoothing -int 2
+#defaults write NSGlobalDomain AppleFontSmoothing -int 2
 
 # Disable auto-correct
-#defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool true
@@ -72,17 +72,17 @@ defaults write com.apple.finder QLEnableTextSelection -bool true
 
 # Hot corners
 # Top left screen corner → Screen Saver
-defaults write com.apple.dock wvous-tl-corner -int 5
-defaults write com.apple.dock wvous-tl-modifier -int 0
+#defaults write com.apple.dock wvous-tl-corner -int 5
+#defaults write com.apple.dock wvous-tl-modifier -int 0
 # Top right screen corner → Desktop
-defaults write com.apple.dock wvous-tr-corner -int 4
-defaults write com.apple.dock wvous-tr-modifier -int 0
+#defaults write com.apple.dock wvous-tr-corner -int 4
+#defaults write com.apple.dock wvous-tr-modifier -int 0
 # Bottom left screen corner → Disable screen saver
-defaults write com.apple.dock wvous-bl-corner -int 6 
-defaults write com.apple.dock wvous-bl-modifier -int 0
+#defaults write com.apple.dock wvous-bl-corner -int 6 
+#defaults write com.apple.dock wvous-bl-modifier -int 0
 # Bottom left screen corner → Expose 
-defaults write com.apple.dock wvous-br-corner -int 2 
-defaults write com.apple.dock wvous-br-modifier -int 0
+#defaults write com.apple.dock wvous-br-corner -int 2 
+#defaults write com.apple.dock wvous-br-modifier -int 0
 
 # Show indicator lights for open applications in the Dock
 #defaults write com.apple.dock show-process-indicators -bool true
@@ -123,17 +123,8 @@ defaults write com.apple.iCal IncludeDebugMenu -bool true
 # Only use UTF-8 in Terminal.app
 #defaults write com.apple.terminal StringEncodings -array 4
 
-#Link the iTunes arrows to local library
-defaults write com.apple.iTunes invertStoreLinks -bool true
-
-# Disable the Ping sidebar in iTunes
-defaults write com.apple.iTunes disablePingSidebar -bool true
-
-# Disable all the other Ping stuff in iTunes
-defaults write com.apple.iTunes disablePing -bool true
-
 # Make ⌘ + F focus the search input in iTunes
-defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Zielsuchfeld" "@F"
+#defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Zielsuchfeld" "@F"
 
 # Disable send and reply animations in Mail.app
 #defaults write com.apple.Mail DisableReplyAnimations -bool true
