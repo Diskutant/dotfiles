@@ -30,3 +30,13 @@ complete -o "nospace" -W "Finder Dock Mail Safari iTunes iCal Address\ Book Syst
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+##
+# Your previous /Users/snake/.bash_profile file was backed up as /Users/snake/.bash_profile.macports-saved_2012-10-13_at_18:59:34
+##
+
+# MacPorts Installer addition on 2012-10-13_at_18:59:34: adding an appropriate PATH variable for use with MacPorts.
+#export PATH=~/bin:/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+export PATH="$PATH:/usr/local/sbin"
+export PATH="$PATH:~/bin/"

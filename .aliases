@@ -3,6 +3,7 @@ alias ..="cd .."
 alias ..2="cd ../.."
 alias ..3="cd ../../.."
 alias ..4="cd ../../../.."
+alias zipinfo="zipinfo -mtz"
 
 # Shortcuts
 alias p="cd ~/Documents/Projekte"
@@ -10,22 +11,20 @@ alias o="open"
 alias oo="open ."
 
 # List all files colorized in long format
-alias ll="ls -lhG"
+alias ll="ls -lhGO"
 
 # List all files colorized in long format, including dot files
-alias lla="ls -lhGa"
+alias lla="ll -a"
 
 # Color for grep
 alias grep='grep --color=auto'
 
 # List only directories | list only non-dirs
-alias lld='ll | grep "^d"'
+alias lld='ll | grep "^d\|^l"'
 alias llf='ll | grep -v "^d"'
+alias llda='lla | grep "^d\|^l"'
+alias llfa='lla | grep -v "^d"'
 
-##I didn't try homebrew yet...
-##needs to be changed for fink and port
-# Get OS X Software Updates, update Homebrew itself, and upgrade installed Homebrew packages
-#alias update='sudo softwareupdate -i -a; brew update; brew upgrade'
 
 # Recursively delete `.DS_Store` files
 alias dscleanup="find . -type f -name '*.DS_Store' -ls -delete"
@@ -38,6 +37,14 @@ alias cleanlogs="sudo rm -rfv /private/var/log/asl/*.asl"
 alias gitlog='git log --date-order --reverse --all --format="%C(green)%H%Creset %C(yellow)%an%Creset %C(blue bold)%ar%Creset %C(red bold)%d%Creset%s" | tail -n 50'
 
 
-##this could be made useful, but no growlnotify on my mac?
-#alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
+alias untar="tar xvf"
+alias tart="tar cvf"
+alias tarz="tar czvf"
 
+alias sha256="shasum -a 256"
+alias sha512="shasum -a 512"
+
+alias saturn="ssh saturn"
+alias jupiter="ssh jupiter"
+alias uber="ssh uber"
+alias pi="ssh pi"
