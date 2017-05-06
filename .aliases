@@ -25,6 +25,7 @@ alias llf='ll | grep -v "^d"'
 alias llda='lla | grep "^d\|^l"'
 alias llfa='lla | grep -v "^d"'
 
+alias fail='tail -f'
 
 # Recursively delete `.DS_Store` files
 alias dscleanup="find . -type f -name '*.DS_Store' -ls -delete"
@@ -41,6 +42,8 @@ alias untar="tar xvf"
 alias tart="tar cvf"
 alias tarz="tar czvf"
 
+alias unrar="~/bin/unrar"
+
 alias sha256="shasum -a 256"
 alias sha512="shasum -a 512"
 
@@ -48,3 +51,5 @@ alias saturn="ssh saturn"
 alias jupiter="ssh jupiter"
 alias uber="ssh uber"
 alias pi="ssh pi"
+alias piserver="ssh piserver"
+alias kodi="ssh kodi"

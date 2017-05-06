@@ -1,0 +1,12 @@
+#!/bin/bash
+ 
+echo -e "
++++++++++++++++++: System Data :+++++++++++++++++++
++ Hostname   = `hostname`
++ Address    = `ifconfig | grep 'status: active' -B3 | head -n1 | awk '{print $2}'`
++ Kernel     = `uname -r`
++ Uptime     = `uptime | sed 's/.*up ([^,]*), .*/1/'`
+++++++++++++++++++: User Data :++++++++++++++++++++
++ Username   = `whoami`
++++++++++++++++++++++++++++++++++++++++++++++++++++
+"
