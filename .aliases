@@ -16,6 +16,8 @@ alias ll="ls -lhGO"
 # List all files colorized in long format, including dot files
 alias lla="ll -a"
 
+alias llt="ll -Atr"
+
 # Color for grep
 alias grep='grep --color=auto'
 
@@ -25,7 +27,13 @@ alias llf='ll | grep -v "^d"'
 alias llda='lla | grep "^d\|^l"'
 alias llfa='lla | grep -v "^d"'
 
+alias exa='exa -lahH'
+alias exad='exa | grep "^d\|^l"'
+alias exaf='exa | grep -v "^d"'
+
 alias fail='tail -f'
+alias flushdns='sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponde'r
+
 
 # Recursively delete `.DS_Store` files
 alias dscleanup="find . -type f -name '*.DS_Store' -ls -delete"
@@ -42,10 +50,13 @@ alias untar="tar xvf"
 alias tart="tar cvf"
 alias tarz="tar czvf"
 
-alias unrar="~/bin/unrar"
-
 alias sha256="shasum -a 256"
 alias sha512="shasum -a 512"
+
+alias df="df -H"
+
+alias bubu="echo -e '\e[34m\e[4mBrew update:\e[0m\e[39m' && brew update && echo -e '\e[34m\e[4mOutdated:\e[0m\e[39m' && brew outdated"
+
 
 alias saturn="ssh saturn"
 alias jupiter="ssh jupiter"
@@ -53,3 +64,7 @@ alias uber="ssh uber"
 alias pi="ssh pi"
 alias piserver="ssh piserver"
 alias kodi="ssh kodi"
+alias lakka="ssh lakka"
+
+
+alias btc="curl -s https://apiv2.bitcoinaverage.com/indices/global/ticker/BTCEUR | grep last && curl -s https://api.coinmarketcap.com/v1/ticker/bitcoin-cash/\?convert\=EUR | grep price_eur && curl -s https://api.coinmarketcap.com/v1/ticker/bitcoin/\?convert\=EUR | grep price_eur"
