@@ -32,15 +32,15 @@
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
 'atom-workspace':
+    "alt-shift-ä": "pane:split-right-and-move-active-item"
+    "alt-shift-ö": "window:move-active-item-to-pane-on-left"
     "cmd-ö": "pane:show-previous-item"
     "cmd-ä": "pane:show-next-item"
-    "cmd-shift-ö": "window:focus-pane-on-left"
-    "cmd-shift-ä": "window:focus-pane-on-right"
+    "cmd-shift-ö": "window:focus-previous-pane"
+    "cmd-shift-ä": "window:focus-next-pane"
+    "cmd-alt-left": "window:focus-previous-pane"
+    "cmd-alt-right": "window:focus-next-pane"
     "alt-tab": "editor:indent-selected-rows"
     "alt-shift-tab": "editor:outdent-selected-rows"
-    "alt-up": "editor:move-line-up"
-    "alt-down": "editor:move-line-down"
-    'alt-cmd-left': "window:focus-pane-on-left"
-    'alt-cmd-right': "window:focus-pane-on-right"
-    'alt-shift-ä': 'pane:split-right-and-move-active-item'
-    'alt-shift-ö': 'window:move-active-item-to-pane-on-left'
+    "alt-shift-up": "editor:move-line-up"
+    "alt-shift-down": "editor:move-line-down"
