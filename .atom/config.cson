@@ -1,0 +1,27 @@
+"*":
+  core:
+    automaticallyUpdate: true
+    disabledPackages: [
+      "sort-all-the-things"
+      "sorter"
+    ]
+    packagesWithKeymapsDisabled: [
+      "spell-check"
+    ]
+    telemetryConsent: "no"
+    titleBar: "custom"
+  editor:
+    fontSize: 16
+    softWrap: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "f8d5926e-43f3-4421-9462-11a86f6c4e3c"
+  "spell-check":
+    locales: [
+      "en-US"
+      "de-DE"
+    ]
+  "split-diff":
+    turnOffSoftWrap: true
+  welcome:
+    showOnStartup: false
