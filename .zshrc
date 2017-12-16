@@ -109,4 +109,5 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
-ioreg -n "Expansion Desk" | grep "Device Speed"
+export PATH="/usr/local/sbin:$PATH"
+

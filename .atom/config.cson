@@ -22,6 +22,7 @@
       "de-DE"
     ]
   "split-diff":
+    muteNotifications: true
     turnOffSoftWrap: true
   welcome:
     showOnStartup: false
