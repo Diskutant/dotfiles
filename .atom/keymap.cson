@@ -47,3 +47,4 @@
 
 'atom-text-editor':
     "cmd-shift-l": "grammar-selector:show"
+    "cmd-shift-t": "tasks:convert-to-task"
