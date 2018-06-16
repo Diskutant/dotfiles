@@ -1,14 +1,21 @@
 "*":
+  "atom-ide-ui":
+    use: {}
   core:
     automaticallyUpdate: true
     disabledPackages: [
       "sort-all-the-things"
       "sorter"
+      "wrap-guide"
     ]
     packagesWithKeymapsDisabled: [
       "spell-check"
     ]
     telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
     titleBar: "custom"
   editor:
     fontSize: 16
@@ -16,6 +23,8 @@
     tabType: "soft"
   "exception-reporting":
     userId: "f8d5926e-43f3-4421-9462-11a86f6c4e3c"
+  "ide-php":
+    phpPath: "/usr/local/bin/php"
   "spell-check":
     locales: [
       "en-US"
